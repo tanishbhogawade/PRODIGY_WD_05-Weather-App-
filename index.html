@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Premium Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌤 Weather App</h1>
+
+  <div class="search-box">
+    <input type="text" id="cityInput" placeholder="Enter city name...">
+    <button onclick="getWeatherByCity()">Search</button>
+  </div>
+
+  <div class="buttons">
+    <button onclick="getWeatherByLocation()">📍 Location</button>
+    <button onclick="toggleTheme()">🌙 Toggle</button>
+  </div>
+
+  <div id="loader" class="loader"></div>
+
+  <div class="weather-card" id="weatherCard">
+    <h2 id="cityName">--</h2>
+    <img id="weatherIcon" src="" alt="">
+    <p id="temperature">--°C</p>
+    <p id="condition">--</p>
+
+    <div class="details">
+      <p>Humidity: <span id="humidity">--</span>%</p>
+      <p>Wind: <span id="wind">--</span> km/h</p>
+    </div>
+  </div>
+
+  <div class="forecast" id="forecast"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
